@@ -6,13 +6,13 @@ int main() {
 
     do {
         printf("Times: ");
-        scanf("%d", &n);
+        scanf_s("%d", &n);
     } while (n < 3 || n > 10);
 
     for (int i = 0; i < n; i++) {
     input:
         printf("arr[%d] = ", i);
-        scanf("%d", &arr[i]);
+        scanf_s("%d", &arr[i]);
 
         if (arr[i] < 1 || arr[i] > 99) {
             printf("Try again: out of limitation.\n");

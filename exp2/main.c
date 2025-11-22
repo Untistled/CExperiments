@@ -3,7 +3,7 @@
 void input(const char* tip, int* value) {
 i:
     printf("%s", tip);
-    scanf("%d", value);
+    scanf_s("%d", value);
 
     if (*value < 0 || *value > 100) {
         printf("Try again: invalid input.\n");
