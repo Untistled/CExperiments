@@ -1,5 +1,3 @@
-#include <stdio.h>
-
 #include "core.h"
 
 void swap_test()
