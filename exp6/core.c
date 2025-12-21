@@ -28,7 +28,7 @@ void my_sort(int* arr, int n)
 		{
 			if (arr[j] > arr[j + 1])
 			{
-				swap(&arr[j], &arr[j + 1]);
+				swap(arr + j, arr + j + 1);
 			}
 		}
 	}
@@ -39,7 +39,7 @@ void print_array(int* arr, int n)
 	int i;
 	for (i = 0; i < n; i++)
 	{
-		printf("%d ", arr[i]);
+		printf("%d ", *(arr + i));
 	}
 	printf("\n");
 }

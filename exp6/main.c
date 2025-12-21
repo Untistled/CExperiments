@@ -22,7 +22,7 @@ void transpose_test()
 	printf("Original matrix:\n");
 	print_matrix(matrix, 3);
 
-	transpose((int**)matrix, 3);
+	transpose(matrix, 3);
 
 	printf("Transposed matrix:\n");
 	print_matrix(matrix, 3);
@@ -44,8 +44,8 @@ void sort_test()
 
 int main()
 {
-	//swap_test();
-	//transpose_test();
+	swap_test();
+	transpose_test();
 	sort_test();
 	return 0;
 }
